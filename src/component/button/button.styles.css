@@ -1,0 +1,14 @@
+.btn {
+  background-color: #F28AB2;
+  color: #fff;
+  border-radius: rgba(0, 0, 0, 0.4) 0px 5px 15px 0px;
+  width: 386px;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 19px;
+  text-align: center;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
