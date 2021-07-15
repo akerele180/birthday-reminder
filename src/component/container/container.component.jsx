@@ -1,22 +1,33 @@
-import React from 'react';
-import Button from '../button/button.component';
+import React, { useState} from 'react';
+// import Button from '../button/button.component';
 import './container.styles.css';
 import Data from '../../Data';
-import Profile from '../profile/profile.component'
+import Profile from '../profile/profile.component';
 
 function Container(){
-  // console.log(Data)
-  return(
+
+  const [ user, setUser ] = useState(Data);
+
+  return( 
     <div className='container'>
-      <h2>{ Data.length } birthdays today.</h2>
+      <h2>{ user.length } birthdays today.</h2>
+
       {
-        Data.map(({id, image, name, age})=>{
+        user.map(({id, image, name, age})=>{
           return (
             <Profile key={id} image={image} name={name} age={age} />
           )
         })
       }
-      <Button />
+
+      {/* <Button data={Data}/> */}
+      <button 
+        type="submit" 
+        className='btn' 
+        onClick={ ()=>setUser([]) }
+      > 
+        Clear All
+      </button>
     </div>
   )
 }
