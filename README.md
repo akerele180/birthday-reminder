@@ -1,4 +1,4 @@
-https://akerele180.github.io/birthday-reminder
+<!-- https://akerele180.github.io/birthday-reminder -->
 
 # Getting Started with Create React App
 
